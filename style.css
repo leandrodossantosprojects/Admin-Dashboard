@@ -1,0 +1,24 @@
+* {
+  border: 1px solid red;
+}
+
+#container {
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 4fr;
+}
+
+#header {
+  grid-column: 2/3;
+}
+
+.logo-svg {
+  height: 50px;
+}
+
+#sidebar {
+  grid-column: 1/2;
+}
+
+#main-content {
+  grid-column: 2/3;
+}
