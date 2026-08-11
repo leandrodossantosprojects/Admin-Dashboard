@@ -16,14 +16,13 @@ body {
 
 #header {
   grid-column: 2/3;
-  max-height: 120px;
+  max-height: 150px;
   display: grid;
   grid-template: 1fr 3fr / 2fr 1fr;
-  gap: 10px;
+  background-color: #afbed1;
 }
 
 .top {
-  padding: 5px;
   grid-area: 1 / 1 / 2 / 3;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -31,33 +30,109 @@ body {
 }
 
 .search {
+  margin-left: 40px;
   grid-column: 1/2;
-  border: 2px solid black;
+  padding: 0;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+}
+
+.search-input {
+  border: 2px solid #172a3a;
   border-radius: 10px;
   margin: 10px;
-  width: 50%;
-  padding: 2px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
   align-self: center;
   font-size: 1rem;
+  color: #172a3a;
+}
+
+.search-btn {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin-left: 15px;
+  background: none;
+  justify-self: start;
+  align-self: center;
+}
+
+.search-icon {
+  object-fit: cover;
+}
+
+.alert-btn {
+  justify-self: end;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #172a3a;
+}
+
+.bell-img {
+  vertical-align: center;
+  filter: invert(1);
+}
+
+.user {
+  display: grid;
+  grid-template: 1.2fr 0.8fr / 75px 4fr;
+  margin-left: 50px;
+}
+
+.user-thumbnail {
+  grid-area: 1 / 1 / 3 / 2;
+  outline: 1px solid black;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  overflow: clip;
+  justify-self: center;
+  align-self: center;
 }
 
 .user-img {
-  height: 50px;
+  object-fit: cover;
 }
 
-.notifications {
-  margin: 10px;
-  grid-column: 2/3;
+#user-name {
+  grid-area: 1/2/2/3;
+  align-self: end;
+  margin: 0;
+}
+
+#user-email {
+  grid-area: 2/2/3/3;
+  align-self: start;
+  margin: 0;
+}
+
+.actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.action-btn {
+  width: 100px;
   height: 40px;
-  vertical-align: center;
-  justify-self: end;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  background-color: #172a3a;
 }
 
 #sidebar {
   padding: 10px;
   grid-column: 1/2;
   grid-row: 1/3;
-  background-image: linear-gradient(65deg, #37718e, #63aabf);
+  background-image: linear-gradient(65deg, #435b70, #172a3a);
   color: white;
 }
 

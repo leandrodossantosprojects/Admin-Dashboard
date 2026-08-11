@@ -11,19 +11,35 @@
     <div id="container">
       <div id="header">
         <div class="top">
-          <input type="" name="search" placeholder="Search..." class="search" />
-          <img
-            src="./media/icons/alert.svg"
-            alt="Alert notifications"
-            class="notifications"
-          />
+          <div class="search">
+            <input
+              type=""
+              name="search"
+              placeholder="Search..."
+              class="search-input"
+            />
+            <button class="search-btn">
+              <img src="./media/icons/search.svg" class="search-icon" />
+            </button>
+          </div>
+          <button class="alert-btn">
+            <img
+              src="./media/icons/alert.svg"
+              alt="Alert notifications"
+              class="bell-img"
+            />
+          </button>
         </div>
         <div class="user">
-          <img
-            class="user-img"
-            src="./media/icons/language-html5.svg"
-            alt="user image"
-          />
+          <div class="user-thumbnail">
+            <img
+              class="user-img"
+              src="./media/icons/language-html5.svg"
+              alt="user image"
+            />
+          </div>
+          <h2 id="user-name">Max maxito</h2>
+          <p id="user-email">maxxito@email.com</p>
         </div>
         <div class="actions">
           <button type="" class="action-btn">New</button>
