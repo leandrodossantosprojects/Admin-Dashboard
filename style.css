@@ -11,7 +11,7 @@ body {
   margin: auto;
   max-width: 1400px;
   display: grid;
-  grid-template: 1fr 5fr / minmax(120, 1fr) 4fr;
+  grid-template: 150px 5fr / 250px 4fr;
 }
 
 #header {
@@ -172,7 +172,9 @@ body {
 }
 
 #main-content {
-  grid-column: 2/3;
+  grid-template: 2/2/3/3;
+  margin: 0;
+  padding: 10px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 15px;
