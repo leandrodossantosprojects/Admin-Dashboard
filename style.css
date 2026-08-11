@@ -4,6 +4,7 @@
 
 body {
   height: 96vh;
+  overflow: hidden;
 }
 
 #container {
@@ -12,6 +13,7 @@ body {
   max-width: 1400px;
   display: grid;
   grid-template: 150px 5fr / 250px 4fr;
+  overflow: hidden;
 }
 
 #header {
@@ -178,22 +180,54 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 15px;
+  gap: 15px;
+  overflow: hidden;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 180px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 250px));
   gap: 15px;
+  overflow: auto;
+  padding-bottom: 15px;
 }
 
 .card {
-  height: 180px;
+  border: 2px solid #172a3a;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.card > img {
-  object-fit: contain;
+.game-img-cont {
+  grid-column: 1/2;
+  overflow: clip;
 }
 
-article {
-  justify-self: end;
+.game-img {
+  object-fit: cover;
+}
+
+.game-data {
+  grid-column: 2/3;
+}
+
+.game-description {
+  overflow: scroll;
+}
+
+.articles {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column: 2/3;
+  padding: 10px;
+  gap: 20px;
+  overflow: scroll;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.article-img {
+  object-fit: cover;
 }
