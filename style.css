@@ -247,7 +247,6 @@ body {
 
 .game-img {
   object-fit: cover;
-  filter: invert(1);
 }
 
 .game-data {
