@@ -246,6 +246,8 @@ body {
 }
 
 .game-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -254,9 +256,10 @@ body {
   display: grid;
   grid-template-rows: auto-fit 2fr;
   height: 100%;
-  padding: 0;
+  padding: 0 0 0 5px;
   gap: 10px;
   margin: 0;
+  box-shadow: -20px 0 50px 10px #05060e;
 }
 
 .game-name {
