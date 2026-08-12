@@ -210,3 +210,29 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5b2a86;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 2px;
+  margin-left: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #12163a;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2e1a63;
+}
