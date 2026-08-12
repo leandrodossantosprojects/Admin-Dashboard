@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template: 150px 5fr / 250px 4fr;
   overflow: hidden;
-  background: linear-gradient(135deg, #12163a, #05060e);
+  background: radial-gradient(#12163a, #05060e);
 }
 
 #header {
